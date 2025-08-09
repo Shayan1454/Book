@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کتاب‌فروشی آنلاین</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #4a148c, #880e4f);
+            color: white;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            color: #4a148c;
+        }
+        .book-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            gap: 20px;
+        }
+        .book {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .book:hover {
+            transform: translateY(-5px);
+        }
+        .book img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .contact-form {
+            display: grid;
+            gap: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #bbb;
+        }
+        .contact-form button {
+            background: #4a148c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>کتاب‌فروشی آنلاین</h1>
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#books">کتاب‌ها</a>
+            <a href="#contact">تماس با ما</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>خوش آمدید</h2>
+        <p>به کتاب‌فروشی آنلاین ما خوش آمدید! اینجا می‌توانید بهترین کتاب‌های روز دنیا را پیدا و خریداری کنید.</p>
+    </section>
+
+    <section id="books">
+        <h2>کتاب‌ها</h2>
+        <div class="book-list">
+            <div class="book">
+                <img src="https://via.placeholder.com/200x250" alt="کتاب اول">
+                <h3>کتاب اول</h3>
+                <p>توضیح کوتاه درباره کتاب.</p>
+            </div>
+            <div class="book">
+                <img src="https://via.placeholder.com/200x250" alt="کتاب دوم">
+                <h3>کتاب دوم</h3>
+                <p>توضیح کوتاه درباره کتاب.</p>
+            </div>
+            <div class="book">
+                <img src="https://via.placeholder.com/200x250" alt="کتاب سوم">
+                <h3>کتاب سوم</h3>
+                <p>توضیح کوتاه درباره کتاب.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>تماس با ما</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="نام شما" required>
+            <input type="email" placeholder="ایمیل شما" required>
+            <textarea rows="4" placeholder="پیام شما" required></textarea>
+            <button type="submit">ارسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 کتاب‌فروشی آنلاین - تمامی حقوق محفوظ است</p>
+    </footer>
+
+</body>
+</html>
